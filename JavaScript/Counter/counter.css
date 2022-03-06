@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#number{
+font-size: 54px;
+margin-bottom: 10px;
+}
+.container{
+    text-align:center ;
+border: 1px solid black;
+}
+button{
+    padding: 6px 12px;
+}
