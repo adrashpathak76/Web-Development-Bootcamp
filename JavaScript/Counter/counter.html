@@ -1,19 +1,118 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATH</title> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vikas Pathak | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: #cbd5e1;
+    }
+    nav {
+      background: #020617;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #e5e7eb;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #0f172a;
+      border-bottom: 2px solid #38bdf8;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .about p {
+      margin-top: 15px;
+    }
+    .skills ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .skills li {
+      background: #fff;
+      padding: 12px;
+      border-left: 4px solid #38bdf8;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .projects .card {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+    }
+    .contact p {
+      margin: 10px 0;
+    }
+    .contact .social {
+      margin-top: 10px;
+    }
+    .contact .social a {
+      display: inline-block;
+      background: #0a66c2;
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+    .contact .social a.email {
+      background: #111827;
+    }
+    .contact .social a.phone {
+      background: #059669;
+    }
+    footer {
+      background: #020617;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <button id="zeroButton">Set Zero</button>
-        <button id="decButton">Decreament</button>
-        <span id="number">0</span>
-        <button id="incButton">Increament</button>
-        <button id="randomButton">Random</button>
-    </div>
-    <script src="counter.js"></script>
-</body>
-</html>
+  <header>
+    <h1>Vikas Pathak</h1>
+    <p>Process Engineer | Battery Recycling | Hydrometallurgy</p>
+  </header>
