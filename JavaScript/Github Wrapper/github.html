@@ -1,30 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Github</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vikas Pathak | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .profile {
+      margin-bottom: 20px;
+      animation: float 4s ease-in-out infinite;
+    }
+    .profile img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      object-fit: cover;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 2.6rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: #cbd5e1;
+    }
+    nav {
+      background: #020617;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #e5e7eb;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: slideUp 1s ease;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #0f172a;
+      border-bottom: 2px solid #38bdf8;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .skills ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .skills li {
+      background: #fff;
+      padding: 15px;
+      border-left: 4px solid #38bdf8;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .skills li:hover {
+      transform: translateY(-5px);
+    }
+    .projects .card {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .projects .card:hover {
+      transform: scale(1.02);
+    }
+    footer {
+      background: #020617;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    /* Animations */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 1.2s ease forwards;
+    }
+    .fade-in.delay {
+      animation-delay: 0.5s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
-<body>
-    <div class="mt-3 container">
-        Github UserName: <input type="text" id="userName"/>
-        <button class="btn btn-primary" id="getInfo">Get Info</button>
-
-        <div class="mt-3 d-flex justify-content-around userInfo">
-
-        </div>
-
-        <div class="container">
-            <h1 class="heading">Project Details</h1>
-            <div class="projects-details">
-
-            </div>
-        </div>
+<body>  <header>
+    <div class="profile">
+      <img src="https://via.placeholder.com/160" alt="Profile Photo" />
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="github.js"></script>
-</body>
+    <h1 class="fade-in">Vikas Pathak</h1>
+    <p class="fade-in delay">Process Engineer | Battery Recycling | Hydrometallurgy</p>
+  </header>  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a process and performance-oriented professional with experience in
+      battery recycling, hydrometallurgical processes, and plant operations.
+      I strongly believe in continuous improvement, discipline, and the motto
+      <strong>"Never Stop"</strong>.
+    </p>
+  </section>  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Battery Recycling Process</li>
+      <li>Hydrometallurgy & Leaching</li>
+      <li>Reactor & Process Design</li>
+      <li>Plant Maintenance & Operations</li>
+      <li>Safety & SOP Development</li>
+      <li>Data Analysis & Reporting</li>
+    </ul>
+  </section>  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Lithium-ion Battery Recycling Plant</h3>
+      <p>
+        Worked on process optimization, leaching efficiency improvement,
+        and maintenance coordination for continuous plant operation.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Mixer-Settler Design</h3>
+      <p>
+        Designed mixer-settler units based on aqueous and organic flow rates
+        to improve phase separation efficiency.
+      </p>
+    </div>
+  </section>  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> your.email@example.com</p>
+    <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
+    <p><strong>Location:</strong> India</p>
+  </section>  <footer>
+    <p>© 2026 Vikas Pathak | All Rights Reserved</p>
+  </footer></body>
 </html>
